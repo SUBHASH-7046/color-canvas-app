@@ -19,6 +19,8 @@
  */
 
 @theme inline {
+  --font-sans: "Work Sans", sans-serif;
+  --font-display: "Instrument Serif", serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -142,3 +144,6 @@
     color: var(--color-foreground);
   }
 }
+
+:root { --background: oklch(0.98 0.01 85); --foreground: oklch(0.2 0.02 60); --primary: oklch(0.62 0.19 35); --primary-foreground: oklch(0.99 0 0); --muted: oklch(0.94 0.015 85); --border: oklch(0.88 0.02 85); --input: oklch(0.88 0.02 85); }
+body { font-family: var(--font-sans); }
