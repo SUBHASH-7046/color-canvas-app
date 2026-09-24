@@ -26,7 +26,7 @@ function Picker() {
   const update = (h: string) => { setHex(h); setInput(h); };
   const setChannel = (k: "r" | "g" | "b", v: number) => update(rgbToHex(k === "r" ? v : rgb.r, k === "g" ? v : rgb.g, k === "b" ? v : rgb.b));
 
-  const formats = [
+  const formats: [string, string][] = [
     ["HEX", hex.toUpperCase()],
     ["RGB", `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`],
     ["HSL", `hsl(${hsl.h}, ${hsl.s}%, ${hsl.l}%)`],
